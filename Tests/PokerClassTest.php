@@ -1,5 +1,4 @@
 <?php
-require_once 'PokerClass.php';
 
 class PokerClassTest extends PHPUnit_Framework_TestCase
 {
