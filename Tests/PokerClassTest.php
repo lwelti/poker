@@ -1,5 +1,5 @@
 <?php
-require_once dirname(__FILE__) .'/../lib/PokerClass.php';
+require_once 'PokerClass.php';
 
 class PokerClassTest extends PHPUnit_Framework_TestCase
 {
