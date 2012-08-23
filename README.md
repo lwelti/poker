@@ -3,7 +3,7 @@
 ## Installation
 
 ### via Github
-`git clone git://github.com/yahoo/mojito.git`
+`git clone git://github.com/lwelti/poker.git`
 
 `cd poker/lib`
 
