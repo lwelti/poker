@@ -3,7 +3,7 @@ class PokerClass
 
    public $all_cards = array();
 
-   function __construct(){
+   public function __construct(){
 
     $cards = array_merge(range(2,10),array("J", "Q", "K", "A"));
     $temp_array = array(); 
@@ -24,12 +24,12 @@ class PokerClass
 
     }
 
-	function allCards(){
+	public function allCards(){
 
 		return $this->all_cards;
 	}
 
-function _shuffleAlgo($items){
+private function _shuffleAlgo($items){
   $i = count($items); // number of items, we already know there are 52, but just to make it more generic
  
   while(--$i){
@@ -47,7 +47,7 @@ function _shuffleAlgo($items){
 /*
 
 */
-   function suffleCards(){
+   public function suffleCards(){
 	
 	return $this->_shuffleAlgo($this->all_cards);
 
