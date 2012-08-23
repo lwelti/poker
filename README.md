@@ -1,4 +1,4 @@
-# Poker Example Class
+# Poker Example Class [![Build Status](https://secure.travis-ci.org/lwelti/poker.png?branch=master)](http://travis-ci.org/lwelti/poker)
 
 ## Installation
 
