@@ -4,7 +4,10 @@
 
 ### via Github
 `git clone git://github.com/yahoo/mojito.git`
-`cd poker`
+
+`cd poker/lib`
+
+`sudo cp PokerClass.php <dest>`
 
 You can copy the PokerClass.php under pear or under your lib directory
 
