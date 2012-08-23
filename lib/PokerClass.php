@@ -6,6 +6,18 @@
 class PokerClass
 {
     public $all_cards = array();
+    private    $suits      = array(
+              	"Hearts",
+            	"Spades",
+           	"Diamonds",
+           	"Clubs"
+        	);
+    private $extra_cards = array(
+            "J",
+            "Q",
+            "K",
+            "A"
+            );
     
 /*
 * Constructor
@@ -13,21 +25,10 @@ class PokerClass
 */
     public function __construct()
     {
-        $cards      = array_merge(range(2, 10), array(
-            "J",
-            "Q",
-            "K",
-            "A"
-        ));
+        $cards      = array_merge(range(2, 10), $this->extra_cards);
         $temp_array = array();
-        $suits      = array(
-            "Heart",
-            "Spade",
-            "Diamond",
-            "Club"
-        );
         
-        foreach ($suits as $suit) {
+        foreach ($this->suits as $suit) {
             foreach ($cards as $card) {
                 $temp_array[] = $card . "(" . $suit . ")";
             }
